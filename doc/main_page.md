@@ -165,3 +165,30 @@
     <td colspan="5">rd = rs1 ^ rs2</td>
   </tr>
 </table>
+
+<table style="text-align: center;">
+  <tr>
+    <th>INSTRUCT</th>
+    <th colspan="5">OR</th>
+  </tr>
+  <tr>
+    <th>BIT</th>
+    <td>15 - 13</td>
+    <td>12 - 10</td>
+    <td>9 - 7</td>
+    <td>6 - 4</td>
+    <td>3 - 0</td>
+  </tr>
+  <tr>
+    <th>VALUE</th>
+    <td>XXX</td>
+    <td>rd</td>
+    <td>rs2</td>
+    <td>rs1</td>
+    <td>1110</td>
+  </tr>
+  <tr>
+    <th>DESCRIBE</th>
+    <td colspan="5">rd = rs1 | rs2</td>
+  </tr>
+</table>
