@@ -311,3 +311,82 @@
     <td colspan="5">if ( flag_carry == 1 ) { pc = #immediate }</td>
   </tr>
 </table>
+
+<table style="text-align: center;">
+  <tr>
+    <th>INSTRUCT</th>
+    <th colspan="5">ST</th>
+  </tr>
+  <tr>
+    <th>BIT</th>
+    <td>15 - 13</td>
+    <td>12 - 10</td>
+    <td>9 - 7</td>
+    <td>6 - 4</td>
+    <td>3 - 0</td>
+  </tr>
+  <tr>
+    <th>VALUE</th>
+    <td>XXX</td>
+    <td>XXX</td>
+    <td>rs2</td>
+    <td>rs1</td>
+    <td>0000</td>
+  </tr>
+  <tr>
+    <th>DESCRIBE</th>
+    <td colspan="5">mem[x[rs2]] = x[rs1]</td>
+  </tr>
+</table>
+
+<table style="text-align: center;">
+  <tr>
+    <th>INSTRUCT</th>
+    <th colspan="5">LDI</th>
+  </tr>
+  <tr>
+    <th>BIT</th>
+    <td colspan="2">15 - 10</td>
+    <td>9 - 7</td>
+    <td>6 - 4</td>
+    <td>3 - 0</td>
+  </tr>
+  <tr>
+    <th>VALUE</th>
+    <td colspan="2">#immediate</td>
+    <td>XXXX</td>
+    <td>rs1</td>
+    <td>0001</td>
+  </tr>
+  <tr>
+    <th>DESCRIBE</th>
+    <td colspan="5">x[rs1] = #immediate</td>
+  </tr>
+</table>
+
+<table style="text-align: center;">
+  <tr>
+    <th>INSTRUCT</th>
+    <th colspan="5">LD</th>
+  </tr>
+  <tr>
+    <th>BIT</th>
+    <td>15 - 13</td>
+    <td>12 - 10</td>
+    <td>9 - 7</td>
+    <td>6 - 4</td>
+    <td>3 - 0</td>
+  </tr>
+  <tr>
+    <th>VALUE</th>
+    <td>XXX</td>
+    <td>rd</td>
+    <td>XXX</td>
+    <td>rs1</td>
+    <td>0010</td>
+  </tr>
+  <tr>
+    <th>DESCRIBE</th>
+    <td colspan="5">x[rd] = m[x[rs1]]</td>
+  </tr>
+</table>
